@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Formulaire</title>
+</head>
+
+<body>
+  <h1>Mon formulaire de NSI</h1>
+  <table>
+    <form method="post" action="nsi.php" autocomplete="on"> <!-- 2 attributs obligatoirs : methode (soit post (privé) soit get (moteur de recherche)) et action : traitement des données--> 
+      
+      <tr><td><label for="prénom">Entrez votre prénom </label></td> <!-- Que va rentrer l'utilisateur dans le champ, on lie for et id-->
+      <td><input type="text" id="prénom" name="prénom" placeholder="ex: Eglantine"></td></tr> <!-- 1 attribut type (définit le type de champs créé)-->
+      
+      <tr><td><label for="date">Entrez votre date de naissance</label></td>
+      <td><input type="date" id="date" name="date"></td></tr>
+      
+     
+      <tr><td><label for="mail">Entrez votre email</label></td>
+      <td><input type="email" id="mail" name="mail" placeholder="ex: eglantine@gmail.com"></td></tr>
+      
+      <tr><td><label for="mdp">Mot de passe </label></td>
+      <td><input type="password" id="mdp" name="mdp"></td></tr>
+  
+      <tr><td>Continuez-vous la NSI ?</td>
+      <td><input type="radio" name="choix">Oui</td>
+      <td><input type="radio" name="choix">Non</td></tr>
+        
+      <tr><td><label for="raison">Pourquoi ?</label></td>
+        <td><textarea id="raison" name="raison"></textarea></td></tr>
+  </table>
+     
+      <input type="submit" value="Envoyer"></td>
+      <input type="reset" value="Recommencer le formulaire">
+      
+    </form>
+ 
+</body>
+</html>
